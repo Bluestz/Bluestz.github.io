@@ -58,18 +58,22 @@
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
+    height: fit-content;
 }
 .heading h1{
     font-size:70px;
     margin-top: 80px;
+    height: fit-content;
 }
 .heading p{
     margin: 20px;
     font-weight: 100;
     line-height: 25px;
+    height: fit-content;
 }
 .Button{
     margin: 80px ;
+    padding: 1;
     text-align: center;
     position: relative;
     top: 40%;
@@ -79,6 +83,7 @@
     padding: 10px;
     text-align: center;
     box-decoration-break: inherit;
+    height: inherit(heading);
 }
 .Button button a{
     text-decoration: none;
