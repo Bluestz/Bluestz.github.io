@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    zoom: 0%;
+    min-zoom: 100%;
 }
 .banner{
     width: 100%;
@@ -74,7 +74,7 @@
 }
 .Button{
     margin: 80px ;
-    padding: 1;
+    padding: 1px;
     text-align: center;
     position: relative;
     top: 40%;
@@ -150,6 +150,4 @@
     background-position-y: center;
     background-position: 7;
     border-left: #fff;
-
-
 }
