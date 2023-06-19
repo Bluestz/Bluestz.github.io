@@ -4,7 +4,13 @@
     padding: 0;
     font-family: sans-serif;
     min-zoom: 100%;
+    overflow-x: hidden;
 }
+.html{
+    margin: auto;
+    min-width: 122px;
+}
+
 .banner{
     width: 100%;
     height: 100vh;
@@ -18,6 +24,7 @@
     padding: 65px 0;
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: space-between;
 }
 .navbar h1{
@@ -54,37 +61,40 @@
 }
 .heading{
     width: 100%;
-    position: absolute;
     top: 50%;
+    margin: auto;
     transform: translateY(-50%);
     text-align: center;
+    position: absolute;
     color: #fff;
-    height: fit-content;
 }
 .heading h1{
     font-size:70px;
     margin-top: 80px;
-    height: fit-content;
+    text-align: center;
+    position: relative;
 }
 .heading p{
     margin: 20px;
     font-weight: 100;
     line-height: 25px;
-    height: fit-content;
+    position: relative;
 }
 .Button{
     margin: 80px ;
     padding: 1px;
     text-align: center;
-    position: relative;
-    top: 40%;
+    position: absolute;
+    transform: translateX(82%);
+    left: 28%;
+    top: 65%;
 }
 .Button button{
     border-color: #000000;
     padding: 10px;
     text-align: center;
+    position: relative;
     box-decoration-break: inherit;
-    height: inherit(heading);
 }
 .Button button a{
     text-decoration: none;
@@ -94,8 +104,8 @@
 .Causes{
     margin: 60px;
     text-align: center;
-    top: 60%;
-    width: 10;
+    width: 89%;
+    top: 50%;
     padding: 0;
     position: relative;
 }
@@ -106,8 +116,8 @@
 .TM{
     margin: 60px;
     text-align: center;
-    top: 60%;
-    width: 10;
+    width: 89%;
+    top: 50%;
     padding: 0;
     position: relative;
 }
@@ -118,8 +128,8 @@
 .PD{
     margin: 60px;
     text-align: center;
-    top: 60%;
-    width: 10;
+    width: 89%;
+    top: 50%;
     padding: 0;
     position: relative;
 }
@@ -130,8 +140,8 @@
 .Views{
     margin: 60px;
     text-align: center;
-    top: 60%;
-    width: 10;
+    width: 89%;
+    top: 50%;
     padding: 0;
     position: relative;
 }
@@ -151,3 +161,14 @@
     background-position: 7;
     border-left: #fff;
 }
+.main{
+    background-color: rgb(255, 255, 255);
+    background-size: 50px;
+    border-style: dotted;
+
+}
+@media all and (display-mode: fullscreen) {
+    .content {
+      padding: 0px;
+    }
+  }
