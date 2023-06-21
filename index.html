@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental illness</title>
-    <link rel="stylesheet" media="screen and (min-width: 1100px) and (max-width: 1315px)" href="style.css">
+    <link rel="stylesheet" href="style.css">
  </head>
  <body>
     <div class="banner">
@@ -29,6 +29,34 @@
             <button><a href="#Credits.">Credits</a></button>
         </div>
     </div>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#Home.">Home</a></li>
+                <li><a href="#PD.">Home</a></li>
+                <li><a href="#Causes.">Home</a></li>
+                <li><a href="#TM.">Home</a></li>
+                <li><a href="#Views.">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="sidebutton">
+        <img src="img.png" id="side">
+    </div>
+    <script>
+        var sidebutton = document.getElementById("sidebutton")
+        var sidenav = document.getElementById("sidenav")
+        var side = document.getElementById("side")
+        sidebutton.onclick = function(){
+            if(sidenav.style.right=='-250px'){
+                sidenav.style.right= '0'
+            }
+            else{
+                sidenav.style.right= '-250px'
+            }
+        }
+    </script>
+
     <main class="main">
         <div class="PD">
             <h2 id="PD.">Title3</h2>
@@ -54,14 +82,7 @@
             <div class="Credits">
                 <h2 id="Credits.">Credits</h2>
                 <p>....|.|.|...|</p>
-            </div>    
-            <ul>
-                <img src="img.png" class="img1">
-                <li><a href="#Home.">Home</a></li>
-                <li><a href="#Causes.">Causes</a></li>
-                <li><a href="#TM.">Treatment</a></li>
-                <li><a href="#Views.">Views</a></li>
-             </ul>       
+            </div>          
         </div>
     </footer>
   </body>
