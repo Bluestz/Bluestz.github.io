@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head class="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental illness</title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+    <div class="banner">
+        <div class="navbar">
+            <h1 id="Home.">MMMMMMMM</h1>
+            <ul>
+                <li><a href="#PD.">Personality Disorders</a></li>
+                <li><a href="#Causes.">Causes</a></li>
+                <li><a href="#TM.">Treatment</a></li>
+                <li><a href="#Views.">Views</a></li>                
+            </ul>
+        </div>
+        <div class="heading">
+            <h1>Title</h1>
+            <p>text</p>
+        </div>
+        <div class="Button">
+            <a href="#PD.">Begin</a>
+            <a href="#Credits.">Credits</a>
+        </div>
+    </div>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#Home.">Home</a></li>
+                <li><a href="#PD.">Home</a></li>
+                <li><a href="#Causes.">Home</a></li>
+                <li><a href="#TM.">Home</a></li>
+                <li><a href="#Views.">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="sidebutton">
+        <img src="https://th.bing.com/th/id/R.269dd16fa1f5ff51accd09e7e1602267?rik=illEuSxDymSGxQ&pid=ImgRaw&r=0" id="side">
+    </div>
+    <script>
+        var sidebutton = document.getElementById("sidebutton")
+        var sidenav = document.getElementById("sidenav")
+        var side = document.getElementById("side")
+        sidebutton.onclick = function(){
+            if(sidenav.style.left=='-250px'){
+                sidenav.style.left= '0'
+            }
+            else{
+                sidenav.style.left= '-250px'
+            }
+        }
+    </script>
+    <main class="main">
+        <div class="PD">
+            <h2 id="PD.">Title3</h2>
+            <p>....text... </p>
+        </div>
+        <div class="Causes">
+            <h2 id="Causes."> Causes </h2>
+            <p>....text...</p>
+        </div>
+        <div class="TM">
+            <h2 id="TM.">Title4</h2>
+            <p>....text.......|.|.|...|</p>
+        </div>
+        <div class="Views">
+            <h2 id="Views.">Title5</h2>
+            <p>....text...</p>
+        </div>
+    </main>
+    <footer>
+        <style>.bg-back{background-color: rgb(169, 172, 172);padding: 25px;}
+        </style>
+        <div class="bg-back">
+            <div class="Credits">
+                <h2 id="Credits.">Credits</h2>
+                <p>....|.|.|...|</p>
+            </div>          
+        </div>
+    </footer>
+  </body>
+</html>

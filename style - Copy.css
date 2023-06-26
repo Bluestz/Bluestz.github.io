@@ -1,0 +1,221 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    min-zoom: 100%;
+    overflow-x: hidden;
+}
+.html{
+    margin: auto;
+    min-width: 122px;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg) ;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 65px 0;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: space-between;
+}
+.navbar h1{
+    margin: 10px;
+    left: 0px;
+    position: relative;
+    align-items: normal;
+    text-decoration: none;
+    color: #fff;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: ' ';
+    height: 3px;
+    width: 0;
+    background: #ca941f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.heading{
+    width: 100%;
+    top: 50%;
+    margin: auto;
+    transform: translateY(-50%);
+    text-align: center;
+    position: absolute;
+    color: #fff;
+}
+.heading h1{
+    font-size:70px;
+    margin-top: 80px;
+    text-align: center;
+    position: relative;
+}
+.heading p{
+    margin: 20px;
+    font-weight: 100;
+    line-height: 25px;
+    position: relative;
+}
+.Button{
+    width: 100%;
+    top: 60%;
+    margin: auto;
+    padding: 1px;
+    text-align: center;
+    position: absolute;
+    transform: translateY(100px);
+}
+.Button {
+    width: 100%;
+    top: 60%;
+    text-align: center;
+    position: absolute;
+    display:block;
+}
+.Button a{
+    text-decoration: none;
+    color:#000000;
+    position: relative;
+    text-transform: none;
+    background-image: url("https://img.freepik.com/free-vector/transparent-capsule-pill-empty-medicine-capsule-shape-container-isolated-transparent-background_145391-795.jpg?w=740&t=st=1687812728~exp=1687813328~hmac=7ad9b5d0db99cf74d2ffac92789e15e71333f187285ca71d5afc679accf1f0f1");
+    background-size: 100px;
+    border-width: 50px;
+    border-radius: 0px;
+    border-style: unset;
+}
+.Button a::after{
+    height: 0px;
+    width: 0;
+    background: #ca941f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.Button a:hover::after{
+    width: 100%;
+    background-position:top;
+}
+.Causes{
+    margin: auto;
+    text-align: center;
+    width: 89%;
+    top: 50%;
+    padding: 0;
+    position: relative;
+}
+.Causes h2{
+    font-size:30px;
+    margin-top: 10px;
+}
+.TM{
+    margin: auto;
+    text-align: center;
+    width: 89%;
+    top: 50%;
+    padding: 0;
+    position: relative;
+}
+.TM h2{
+    font-size:30px;
+    margin-top: 10px;
+}
+.PD{
+    margin: auto;
+    text-align: center;
+    width: 89%;
+    top: 50%;
+    padding: 0;
+    position: relative;
+}
+.PD h2{
+    font-size:30px;
+    margin-top: 10px;
+}
+.Views{
+    margin: auto;
+    text-align: center;
+    width: 89%;
+    top: 50%;
+    padding: 0;
+    position: relative;
+}
+.Views h2{
+    font-size:30px;
+    margin-top: 10px;
+}
+.Credits{
+    text-align: left;
+    position: relative;
+    width: 50;
+    top: 30%;
+}
+.Content{
+    background-color: #bcdace;
+    background-position-y: center;
+    background-position: 7;
+    border-left: #fff;
+}
+.main{
+    background-color: rgb(255, 255, 255);
+    background-size: 50px;
+    border-style: dotted;
+
+}
+#sidenav{
+    width: 120px;
+    height: 100vhl;
+    position: fixed;
+    left: 0px;
+    top: 10px;
+    z-index: 3;
+    background: #202020;
+    transition: 0.5s;
+}
+nav ul li{
+    list-style: none;
+    margin: 50px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#sidebutton{
+    width: 50px;
+    height: 60px;
+    background:#202020;
+    text-align: center;
+    position: fixed;
+    left: 30px;
+    top: 0px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#sidebutton img{
+    width: 32px;
+    margin-top: 15px;
+}
