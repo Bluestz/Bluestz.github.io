@@ -89,17 +89,34 @@
     position: absolute;
     transform: translateY(100px);
 }
-.Button button{
-    border-color: #000000;
-    padding: 10px;
+.Button {
+    width: 100%;
+    top: 60%;
     text-align: center;
-    position: static;
+    position: absolute;
+
 }
-.Button button a{
+.Button a{
     text-decoration: none;
-    color:#a82d2d;
+    color:#ffffff;
     position: relative;
     text-transform: none;
+    border-style: unset;
+    border-radius: 20%;
+    background-position: fixed;
+    background-image: url("https://th.bing.com/th/id/R.269dd16fa1f5ff51accd09e7e1602267?rik=illEuSxDymSGxQ&pid=ImgRaw&r=0");
+}
+.Button a::after{
+    height: 0px;
+    width: 100%;
+    background: #ca941f;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.Button a:hover::after{
+    width: 100%;
+    background-position:top;
 }
 .Causes{
     margin: auto;
@@ -165,16 +182,18 @@
     background-color: rgb(255, 255, 255);
     background-size: 50px;
     border-style: dotted;
+    text-align: center;
+    position: relative;
 
 }
 #sidenav{
     width: 120px;
     height: 100vhl;
     position: fixed;
-    right: 0px;
-    top: 15px;
-    z-index: 2;
-    background: #3f3f3f;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+    background: #202020;
     transition: 0.5s;
 }
 nav ul li{
@@ -185,19 +204,46 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
 }
+nav ul li::after{
+    content: ' ';
+    height: 3px;
+    left: 1px;
+    width: 1px;
+    background: #ca941f;
+    position: absolute;
+}
+nav ul li:hover::after{
+    width: 100%;
+    
+}
 #sidebutton{
     width: 50px;
     height: 50px;
-    background:#3f3f3f;
+    background:#202020;
     text-align: center;
     position: fixed;
-    right: 30px;
-    top: 20px;
+    left: 30px;
+    top: 0px;
     border-radius: 3px;
     z-index: 3;
     cursor: pointer;
 }
 #sidebutton img{
-    width: 20px;
+    width: 32px;
     margin-top: 15px;
+}
+.after{
+    width: 75px;
+    height: 16px;
+    padding: 8px 0;
+    margin: 0;
+    opacity: 1;
+}
+.PD,.TM,.Views, .Causes{
+    text-align: center;
+    margin: auto;
+    width: 800px;
+    padding: auto;
+    opacity: 1;
+    
 }
