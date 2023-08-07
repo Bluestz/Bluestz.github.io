@@ -9,23 +9,26 @@
 .html{
     margin: auto;
     min-width: 122px;
+
 }
 
 .banner{
     width: 100%;
-    height: 100vh;
+    height: 800px;
     background-image:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg) ;
     background-size: cover;
     background-position: center;
+    overflow: auto;
 }
 .navbar{
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 65px 0;
+    padding: 50px 0;
     display: flex;
     align-items: center;
     position: absolute;
     justify-content: space-between;
+    background-color: #000;
 }
 .navbar h1{
     margin: 10px;
@@ -62,17 +65,21 @@
 .heading{
     width: 100%;
     top: 50%;
-    margin: auto;
-    transform: translateY(-50%);
-    text-align: center;
     position: absolute;
-    color: #fff;
-}
-.heading h1{
-    font-size:70px;
-    margin-top: 80px;
     text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+ .heading h1{
+    font-size:500%;
+    text-align: center;
+    overflow-y: hidden;
     position: relative;
+    width:100%;
+    float: center;
 }
 .heading p{
     margin: 20px;
@@ -80,97 +87,134 @@
     line-height: 25px;
     position: relative;
 }
-.Button{
-    width: 100%;
-    top: 60%;
-    margin: auto;
-    padding: 1px;
-    text-align: center;
-    position: absolute;
-    transform: translateY(100px);
-}
-.Button {
-    width: 100%;
-    top: 60%;
-    text-align: center;
-    position: absolute;
 
+.Button{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family:"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 80%;
+  font-weight: 600;
+  line-height: normal;
+  margin:0;
+  min-height: 0px;
+  min-width: 0px;
+  outline: none;
+  padding: 16px 20px;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  position: absolute;
+  width: 100px;
+  top: 550px;
+  height:55px;
+  left:40%;
+  will-change: transform;
 }
 .Button a{
+    color: #fff;
     text-decoration: none;
-    color:#ffffff;
-    position: relative;
-    text-transform: none;
-    border-style: unset;
-    border-radius: 20%;
-    background-position: fixed;
-    background-image: url("https://th.bing.com/th/id/R.269dd16fa1f5ff51accd09e7e1602267?rik=illEuSxDymSGxQ&pid=ImgRaw&r=0");
 }
-.Button a::after{
-    height: 0px;
-    width: 100%;
-    background: #ca941f;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+
+.Button:disabled {
+  pointer-events: none;
 }
-.Button a:hover::after{
-    width: 100%;
-    background-position:top;
+
+.Button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-px);
 }
-.Causes{
-    margin: auto;
+
+.Button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+.CreditsB{
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid #1A1A1A;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #3B3B3B;
+    cursor: pointer;
+    display: inline-block;
+    font-family:"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 80%;
+    font-weight: 600;
+    line-height: normal;
+    margin:0px;
+    min-height: 0px;
+    min-width: 0px;
+    outline: none;
+    padding: 16px 20px;
     text-align: center;
-    width: 89%;
-    top: 50%;
-    padding: 0;
-    position: relative;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100px;
+    position: absolute;
+    height: 55px;
+    right:40%; 
+    top: 550px;
 }
+@media screen {
+}
+.CreditsB a{
+    text-decoration: none;
+    color: #ffffff;;
+}
+.CreditsB:disabled {
+    pointer-events: none;
+  }
+.CreditsB:hover {
+    color: #fff;
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-px);
+  }
+  
+.CreditsB:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  .Beginning{
+
+  }
 .Causes h2{
     font-size:30px;
     margin-top: 10px;
-}
-.TM{
-    margin: auto;
-    text-align: center;
-    width: 89%;
-    top: 50%;
-    padding: 0;
-    position: relative;
 }
 .TM h2{
     font-size:30px;
     margin-top: 10px;
 }
-.PD{
-    margin: auto;
-    text-align: center;
-    width: 89%;
-    top: 50%;
-    padding: 0;
-    position: relative;
-}
 .PD h2{
     font-size:30px;
     margin-top: 10px;
 }
-.Views{
-    margin: auto;
-    text-align: center;
-    width: 89%;
-    top: 50%;
-    padding: 0;
-    position: relative;
+.blank{
+    background-color: var(--faded-gray);
+	height: 2px;
+	max-width: 300px;
+	margin: 15px auto 20px;
 }
+
 .Views h2{
     font-size:30px;
     margin-top: 10px;
-}
-.Credits{
-    text-align: left;
-    position: relative;
-    width: 50;
-    top: 30%;
 }
 .Content{
     background-color: #bcdace;
@@ -178,12 +222,18 @@
     background-position: 7;
     border-left: #fff;
 }
-.main{
-    background-color: rgb(255, 255, 255);
-    background-size: 50px;
-    border-style: dotted;
-    text-align: center;
-    position: relative;
+main{
+    background-color: #fff;
+    margin-left:auto;
+    margin-right:auto;
+    width:75%;
+    float: center;
+    overflow: hidden;
+}
+@media only screen and(max-width: px){
+    main{
+        width: 100%;
+    }
 
 }
 #sidenav{
@@ -202,19 +252,14 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+nav ul li a:hover{
     color: #fff;
-}
-nav ul li::after{
-    content: ' ';
-    height: 3px;
-    left: 1px;
-    width: 1px;
-    background: #ca941f;
-    position: absolute;
-}
-nav ul li:hover::after{
-    width: 100%;
-    
+
 }
 #sidebutton{
     width: 50px;
@@ -242,8 +287,67 @@ nav ul li:hover::after{
 .PD,.TM,.Views, .Causes{
     text-align: center;
     margin: auto;
-    width: 800px;
+    width: 100%;
     padding: auto;
     opacity: 1;
     
 }
+
+.footer{
+    background:#818181;
+    padding:30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align:center;
+}
+    
+.footer .credits, .clear {
+    width:100%;
+    margin:1% 0%;
+    padding:0.6% 0%;
+    color:gray;
+    font-size:0.8em;
+}
+    
+.footer .credits a{
+    text-decoration:none;
+    color:rgb(0, 0, 0);
+    transition:0.5s;
+}
+    
+.footer .credits a:hover{
+    color:#fff;
+}
+    
+.footer .credits ul{
+    width:100%;
+}
+    
+.footer .credits ul li{
+    display:inline-block;
+    margin:0px 30px;
+}
+    
+@media (max-width:720px){
+    .footer{
+    text-align:left;
+    padding:5%;
+}
+.footer .credits ul li{
+    display:block;
+    size: 0;
+    margin:10px 0px;
+    text-align:left;
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .footer .credits ul{
+        width: 100%;
+    }
+    .footer .credits ul li{
+        display:inline-block;
+        margin:0px 10px;
+        
+    }
+}
+    
