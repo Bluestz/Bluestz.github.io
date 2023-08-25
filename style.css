@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    min-zoom: 100%;
     overflow-x: hidden;
 }
 html{
@@ -90,7 +89,6 @@ html{
     left: 5%;
     text-align: center;
     position: absolute;
-    float: center;
 
 }
 @media only screen and (min-width:769px){
@@ -114,13 +112,12 @@ html{
     text-overflow: ellipsis;
 
 }
- .heading h1{
+ .heading h2{
     font-size:500%;
     text-align: center;
     overflow-y: hidden;
     position: relative;
     width:100%;
-    float: center;
 }
 .heading p{
     margin: 20px;
@@ -129,7 +126,7 @@ html{
     position: relative;
 }
 @media only screen and (max-width:769px) {
-    .heading, .heading h1{
+    .heading, .heading h2{
         top: 130px;
         
     }
@@ -292,16 +289,9 @@ html{
     font-size:30px;
     margin-top: 10px;
 }
-.Content{
-    background-color: #bcdace;
-    background-position-y: center;
-    background-position: 7;
-    border-left: #fff;
-}
 main{
     margin-right:auto;
     width:75%;
-    float: center;
     overflow: hidden;
 }
 @media only screen and (max-width:768px){
@@ -372,7 +362,6 @@ main{
     text-align: center;
     margin: auto;
     width: 100%;
-    padding: auto;
     opacity: 1;
     
 }
@@ -423,7 +412,7 @@ main{
 }
 .footer .Credits ul li{
     display:block;
-    size: 0;
+    resize: 0;
     margin:10px 0px;
     text-align:left;
     }
