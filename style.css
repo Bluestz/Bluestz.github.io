@@ -1,4 +1,5 @@
 
+
 *{
     margin: 0;
     padding: 0;
@@ -6,9 +7,10 @@
     min-zoom: 100%;
     overflow-x: hidden;
 }
-.html{
+html{
     margin: auto;
     min-width: 122px;
+    background-color: #e4e6e7;
 
 }
 
@@ -23,12 +25,15 @@
 .navbar{
     width: 100%;
     margin: auto;
-    padding: 50px 0;
+    padding: 30px 0;
     display: flex;
+    transition: 0.5s;
     align-items: center;
-    position: absolute;
+    top: -20px;
+    position: fixed;
     justify-content: space-between;
     background-color: #000;
+    z-index: 50;
 }
 .navbar h1{
     margin: 10px;
@@ -45,6 +50,11 @@
     position: relative;
 }
 .navbar ul li a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
     text-decoration: none;
     color:#fff;
     text-transform: uppercase;
@@ -57,11 +67,42 @@
     position: absolute;
     left: 0;
     bottom: 0;
-
+    
 }
 .navbar ul li:hover::after{
     width: 100%;
 }
+
+@media only screen and (max-width:769px){
+    .navbar, .navbar h1, .navbar ul li, .navbar ul li a, .navbar ul li a::after, .navbar ul li:hover::after{
+        display: none;
+    }
+
+
+}
+
+.Beginnin{
+    content: '';
+    width: 500px;
+    height: 550px;
+    background-color: #664646;
+    top: 10%;
+    left: 5%;
+    text-align: center;
+    position: absolute;
+    float: center;
+
+}
+@media only screen and (min-width:769px){
+    .Beginnig{
+        width: 1200px;
+    }
+}
+.heading::before{
+    content: ' ';
+
+}
+
 .heading{
     width: 100%;
     top: 50%;
@@ -87,8 +128,22 @@
     line-height: 25px;
     position: relative;
 }
+@media only screen and (max-width:769px) {
+    .heading, .heading h1{
+        top: 130px;
+        
+    }
+    .heading p{
+        line-height:280px;
+    }
+    .Button button{
+        position: relative;
+        top: 500px;
+    }
 
-.Button{
+
+}
+.Button button{
   appearance: none;
   background-color: transparent;
   border: 2px solid #1A1A1A;
@@ -117,30 +172,30 @@
   width: 100px;
   top: 550px;
   height:55px;
-  left:40%;
+  right:53%;
   will-change: transform;
 }
-.Button a{
+.Button button{
     color: #fff;
     text-decoration: none;
 }
 
-.Button:disabled {
+.Button button:disabled {
   pointer-events: none;
 }
 
-.Button:hover {
+.Button button:hover {
   color: #fff;
   background-color: #1A1A1A;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-px);
 }
 
-.Button:active {
+.Button button:active {
   box-shadow: none;
   transform: translateY(0);
 }
-.CreditsB{
+.CreditsB button{
     appearance: none;
     background-color: transparent;
     border: 2px solid #1A1A1A;
@@ -167,36 +222,49 @@
     width: 100px;
     position: absolute;
     height: 55px;
-    right:40%; 
+    left:53%; 
     top: 550px;
 }
-@media screen {
-}
-.CreditsB a{
+
+.CreditsB button{
     text-decoration: none;
     color: #ffffff;;
 }
-.CreditsB:disabled {
+.CreditsB button:disabled {
     pointer-events: none;
   }
-.CreditsB:hover {
+.CreditsB button:hover {
     color: #fff;
     background-color: #1A1A1A;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-px);
   }
   
-.CreditsB:active {
+.CreditsB button:active {
     box-shadow: none;
     transform: translateY(0);
   }
-  .Beginning{
 
-  }
+.Summary{
+    background-color: #f7f7f7;
+    line-height: 26px;
+    margin: 30px 0;
+    padding: 20px 3px;
+    border-left-style: solid;
+    border-left-width: 4px;
+    border-color: #000000;
+}
+.Summary p{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 26px;
+}
 .Causes h2{
     font-size:30px;
     margin-top: 10px;
 }
+
 .TM h2{
     font-size:30px;
     margin-top: 10px;
@@ -204,6 +272,14 @@
 .PD h2{
     font-size:30px;
     margin-top: 10px;
+}
+.PD img{
+    position: relative;
+    height: 90%;
+
+}
+@media only screen and (max-width:569px){
+
 }
 .blank{
     background-color: var(--faded-gray);
@@ -223,68 +299,76 @@
     border-left: #fff;
 }
 main{
-    background-color: #fff;
-    margin-left:auto;
     margin-right:auto;
     width:75%;
     float: center;
     overflow: hidden;
 }
-@media only screen and(max-width: px){
+@media only screen and (max-width:768px){
     main{
         width: 100%;
+
     }
 
 }
-#sidenav{
-    width: 120px;
-    height: 100vhl;
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    z-index: 3;
-    background: #202020;
-    transition: 0.5s;
+@media only screen and (max-width:768px){
+    #sidenav{
+        width: 120px;
+        height: 100vhl;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        z-index: 3;
+        background: #202020;
+        transition: 0.5s;
+    }
+    nav ul li{
+        list-style: none;
+        margin: 50px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    nav ul li a:hover{
+        color: #fff;
+    
+    }
+    #sidebutton{
+        width: 50px;
+        height: 50px;
+        background:#202020;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 0px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    #sidebutton img{
+        width: 32px;
+        margin-top: 15px;
+    }
+    .after{
+        width: 75px;
+        height: 16px;
+        padding: 8px 0;
+        margin: 0;
+        opacity: 1;
+    }
 }
-nav ul li{
-    list-style: none;
-    margin: 50px 20px;
+@media only screen and (min-width:769px) {
+    #sidebutton, #sidenav{
+        display: none;
+    }
 }
-nav ul li a{
-    text-decoration: none;
-    font-size: 15px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
-nav ul li a:hover{
-    color: #fff;
 
-}
-#sidebutton{
-    width: 50px;
-    height: 50px;
-    background:#202020;
-    text-align: center;
-    position: fixed;
-    left: 30px;
-    top: 0px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
-}
-#sidebutton img{
-    width: 32px;
-    margin-top: 15px;
-}
-.after{
-    width: 75px;
-    height: 16px;
-    padding: 8px 0;
-    margin: 0;
-    opacity: 1;
-}
-.PD,.TM,.Views, .Causes{
+
+.PD, .PD img, .TM,.Views, .Causes{
     text-align: center;
     margin: auto;
     width: 100%;
@@ -294,13 +378,17 @@ nav ul li a:hover{
 }
 
 .footer{
-    background:#818181;
+    background:#ffffff;
     padding:30px 0px;
+    margin: 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
 }
-    
-.footer .credits, .clear {
+.footer h2{
+    text-align: center;
+    margin-bottom: 20px;
+}   
+.footer .Credits, .clear {
     width:100%;
     margin:1% 0%;
     padding:0.6% 0%;
@@ -308,23 +396,24 @@ nav ul li a:hover{
     font-size:0.8em;
 }
     
-.footer .credits a{
+.footer .Credits a{
     text-decoration:none;
     color:rgb(0, 0, 0);
     transition:0.5s;
 }
     
-.footer .credits a:hover{
-    color:#fff;
+.footer .Credits a:hover{
+    color:#585858;
 }
     
-.footer .credits ul{
+.footer .Credits ul{
     width:100%;
+    text-align: center;
 }
     
-.footer .credits ul li{
+.footer .Credits ul li{
     display:inline-block;
-    margin:0px 30px;
+    margin:0px 20px;
 }
     
 @media (max-width:720px){
@@ -332,7 +421,7 @@ nav ul li a:hover{
     text-align:left;
     padding:5%;
 }
-.footer .credits ul li{
+.footer .Credits ul li{
     display:block;
     size: 0;
     margin:10px 0px;
@@ -341,13 +430,27 @@ nav ul li a:hover{
 
 }
 @media screen and (max-width: 768px) {
-    .footer .credits ul{
+    .footer .Credits ul{
         width: 100%;
     }
-    .footer .credits ul li{
+    .footer .Credits ul li{
         display:inline-block;
         margin:0px 10px;
         
     }
 }
-    
+.footer h3{
+    text-align: center;
+    margin-top: 30px;
+}    
+@media screen and (min-width:769px) {
+    .footer button{
+        
+        right: 300px;
+    }
+    .footer{
+        font-size: 20px;
+        width: 100%;
+    }
+}
+

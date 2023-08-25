@@ -11,7 +11,7 @@
  </head>
  <body>
     <div class="navbar">
-        <h1 id="Home.">MMMMMMMM</h1>
+        <h1 id="Home.">MMMMMMMM</h1> 
         <ul>
             <li><a href="#PD.">Personality Disorders</a></li>
             <li><a href="#Causes.">Causes</a></li>
@@ -19,20 +19,32 @@
             <li><a href="#Views.">Views</a></li>                
         </ul>
     </div>
-    <div class="banner">
+    <script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+    </script>
+    <section class="banner">
+    <div id="box">
         <div class="Beginning">
             <div class="heading">
                 <h1>Title</h1>
                 <p>text</p>
             </div>
             <div class="Button" >
-                <a href="#PD.">Begin</a>           
+                <button onclick="location.href='http://www.example.com'" type="button">Begin</button>           
             </div>
             <div class="CreditsB">
-                <a href="#Credits.">Credits</a>
+                <button onclick="location.href='http://www.example.com'" type="button">Credits</button>
             </div>
         </div>
     </div>
+    </section>
     <div id="sidenav">
         <nav>
             <ul>
@@ -53,29 +65,34 @@
         var sidenav = document.getElementById("sidenav")
         var side = document.getElementById("side")
         sidebutton.onclick = function(){
-            if(sidenav.style.left=='-250px'){
-                sidenav.style.left= '0'
+            if(sidenav.style.right=='-250px'){
+                sidenav.style.right= '0'
             }
             else{
-                sidenav.style.left= '-250px'
+                sidenav.style.right= '-250px'
             }
             
         }
     </script>
     <main class="main">
         <div class="PD">
-            <h2 id="PD.">Personality Disorders</h2>
+            <h2 id="PD.">Personality Disorders</h2> <br>
+            <img src="https://www.behavioralhealthflorida.com/wp-content/uploads/2019/10/types-of-personality-disorders.jpg">
+            <p id="sub"><em>Image from <a href="https://www.behavioralhealthflorida.com/wp-content/uploads/2019/10/types-of-personality-disorders.jpg">Behavioral Health Florida</a></em></p>
             <p>Personality disorders is an complex mental disorder in terms of both identifying and controlling it. Personality disorders are a group of mental illnesses that involves long-term patterns of thoughts and behaviors which are unhealthy and inflexible.
-
-
                 The causes of personality disorders is mostly a blend of genetics and environmental factors. Your genes may make it more likely that you develop a personality disorder, and what happens to you in life may set a personality disorder into motion. Research suggests that genetics, abuse, and other factors contribute to the development of obsessive-compulsive, narcissistic, or other personality disorders. People who have a dysfunctional home life in early childhood and adolescence can develop personality disorders in later life.
-                
                  </p>
+            <div class="Summary">
+                <p>Text......</p>
+            </div>
         </div>
         <div class="Causes">
             <h2 id="Causes."> Causes </h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
             </p>
+            <div class="Summary">
+                <p>Text......</p>
+            </div>
         </div>
         <div class="blank"> </div>
 
@@ -84,33 +101,40 @@
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
 
             </p>
+            <div class="Summary">
+                <p>Text......</p>
+            </div>
         </div>
         <div class="Views">
             <h2 id="Views.">Views</h2>
             <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+                <div class="Summary">
+                    <p>Text......</p>
+                </div>
             </p>
         </div>
     </main>
     <footer>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap">
         <div class="footer">
-            <div class="credits">
-            <ul>
-            <li><a href="#">Credits1</a></li>
-            <li><a href="#">Credits2</a></li>
-            <li><a href="#">Credits3</a></li>
-            <li><a href="#">Credits4</a></li>
-            <li><a href="#">Credits5</a></li>
-            </ul>
-            </div>
-            
-            <div class="clear">
-            </div>
-            </div>
-            
-            <div class="footerani">
-                <canvas id="canvas"></canvas>
-
+            <section class="Credits">
+             <div id="Credits.">
+                <h2>Credits</h2></div>
+              <ul>
+              <li><a href="#">Credits1</a></li>
+              <li><a href="#">Credits2</a></li>
+              <li><a href="#">Credits3</a></li>
+              <li><a href="#">Credits4</a></li>
+              <li><a href="#">Credits5</a></li>
+             </ul>          
+             <h3>Go to Summary</h3>
+             <ul>
+                <li><a href="#Summary1">Summary1</a></li>
+                <li><a href="#">Summary1</a></li>
+                <li><a href="#">Summary1</a></li>
+                <li><a href="#">Summary1</a></li>  
+             </ul>
+            </section>
             </div>
     </footer>
   </body>
