@@ -412,7 +412,7 @@ main{
 }
 .footer .Credits ul li{
     display:block;
-    resize: 0px;
+    resize: none;
     margin:10px 0px;
     text-align:left;
     }
