@@ -11,12 +11,13 @@
  </head>
  <body>
     <div class="navbar">
-        <h1 id="Home.">MMMMMMMM</h1> 
+        <h1></h1>
         <ul>
-            <li><a href="#PD.">Personality Disorders</a></li>
-            <li><a href="#Causes.">Causes</a></li>
-            <li><a href="#TM.">Treatment</a></li>
-            <li><a href="#Views.">Views</a></li>                
+            <li><a href="#PD">Personality Disorders</a></li>
+            <li><a href="#Symptoms">Symptoms</a></li>
+            <li><a href="#Causes-and-Treatment">Causes and Treatment</a></li>
+            <li><a href="#Views">Views</a></li>
+            <li><a href="#Credits">Credits</a></li>                
         </ul>
     </div>
     <script>
@@ -30,30 +31,62 @@
 }
     </script>
     <section class="banner">
-    <div id="box">
-        <div class="Beginning">
-            <div class="heading">
-                <h2>Title</h2>
-                <p>text</p>
-            </div>
-            <div class="Button" >
-                <button onclick="location.href='http://www.example.com'" type="button">Begin</button>           
-            </div>
-            <div class="CreditsB">
-                <button onclick="location.href='http://www.example.com'" type="button">Credits</button>
-            </div>
+    <div class="container" id="Home">
+        <div class="heading">
+            <h2>Personality Disorders</h2> 
+            <div id="myButton">
+                <button class="MButton">
+                Medical Disclaimer
+                </button>     
+            </div>   
         </div>
-    </div>
+      <div id="myPopup" class="popup">
+          <div class="popup-content">
+              <h1 style="color:rgb(0, 0, 0);">
+                    Medical Disclaimer
+                </h1>
+              <p>*The information provided on this website is not to <br>
+                be taken as professional medical advice and is for 
+                <br>educational purposes only*
+                <br>Before making any decisions about your health care, <br>
+                please speak with your doctor.</p>
+              </p>
+              <button id="closePopup">
+                    Close
+                </button>
+          </div>
+      </div>
+        <div class="Button" >
+            <button onclick="location.href='#PD'" type="button">Begin</button>           
+        </div>
+        <div class="CreditsB">
+            <button onclick="location.href='#Credits'" type="button">Credits</button>
+        </div>
+ 
+    </div>         
+     <script>
+            myButton.addEventListener("click", function () {
+                myPopup.classList.add("show");
+            });
+            closePopup.addEventListener("click", function () {
+                myPopup.classList.remove("show");
+            });
+            window.addEventListener("click", function (event) {
+                if (event.target == myPopup) {
+                    myPopup.classList.remove("show");
+                }
+            });
+        </script>  
     </section>
     <div id="sidenav">
         <nav>
             <ul>
-                <li><a href="#Home.">Home</a></li>
-                <li><a href="#PD.">Personality Disorder</a></li>
-                <li><a href="#Causes.">Causes</a></li>
-                <li><a href="#TM.">Treatment</a></li>
-                <li><a href="#Views.">Views</a></li>
-                <li><a href="#Credits.">Credits</a></li>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#PD">Personality Disorder</a></li>
+                <li><a href="#Symptoms">Symptoms</a></li>
+                <li><a href="#Causes-and-Treatment">Causes and Treatment</a></li>
+                <li><a href="#Views">Views</a></li>
+                <li><a href="#Credits">Credits</a></li>
             </ul>
         </nav>
     </div>
@@ -74,66 +107,100 @@
             
         }
     </script>
-    <main class="main">
-        <div class="PD">
-            <h2 id="PD.">Personality Disorders</h2> <br>
-            <img src="https://www.behavioralhealthflorida.com/wp-content/uploads/2019/10/types-of-personality-disorders.jpg" alt=" ">
-            <p id="sub"><em>Image from <a href="https://www.behavioralhealthflorida.com/wp-content/uploads/2019/10/types-of-personality-disorders.jpg">Behavioral Health Florida</a></em></p>
-            <p>Personality disorders is an complex mental disorder in terms of both identifying and controlling it. Personality disorders are a group of mental illnesses that involves long-term patterns of thoughts and behaviors which are unhealthy and inflexible.
-                The causes of personality disorders is mostly a blend of genetics and environmental factors. Your genes may make it more likely that you develop a personality disorder, and what happens to you in life may set a personality disorder into motion. Research suggests that genetics, abuse, and other factors contribute to the development of obsessive-compulsive, narcissistic, or other personality disorders. People who have a dysfunctional home life in early childhood and adolescence can develop personality disorders in later life.
-                 </p>
-            <div class="Summary">
-                <p>Text......</p>
+    <div id="PD"></div>      
+        <h2 id="PD-Title">Personality Disorders</h2>
+        <section class="PD">
+            <div class="PD-img">
+                <img src="https://www.behavioralhealthflorida.com/wp-content/uploads/2019/10/types-of-personality-disorders.jpg">         
             </div>
-        </div>
-        <div class="Causes">
-            <h2 id="Causes."> Causes </h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
-            </p>
-            <div class="Summary">
-                <p>Text......</p>
+            <div class="PD-text">
+                <p>Personality disorders are a group of mental health conditions that involve long-lasting, disruptive patterns of thinking, behavior, mood and relating to others. Everyone has their own unique personalities, and these personalities allow us to adapt to our environment.  People with personality disorder have personality traits that are less adaptive, leading to inflexibility and unhealthy coping. People with personality disorders often have difficulty understanding emotions and coping with stress. They may also act impulsively and have trouble forming healthy relationships. </p>
+            </div>        
+            <div class="Summary1" id="Summary1">
+             <p></p>
+            </div>   
+            <div id="Symptoms"></div>       
+        </section>            
+        <h2 id="TM-Title">Symptoms</h2>
+        <section id="TM">
+            <p> Symptoms vary depending on the type of personality disorder, but some common signs include strange or unpredictable behavior, suspicion and distrust, difficulty with empathy, trouble with boundaries, and problems maintaining close relationships</p>
+            <div class="TM-img"><img src="https://images.everydayhealth.com/images/emotional-health/antisocial-personality-disorder/sociopath-treatment-722x406.jpg?sfvrsn=7d557746_0"></div>
+           <div class="row">
+            <div class="TM-text">
+                <h2>Cluster A</h2>
+                <p>Cluster A personality disorders are a group of mental health conditions that involve distrustful, or detached patterns of thinking and behavior. They include paranoid personality disorder, schizoid personality disorder, and schizotypal personality disorder. People with these disorders may have difficulty forming or maintaining close relationships, expressing emotions, or coping with stress.     </p>
             </div>
-        </div>
-        <div class="blank"> </div>
+            <div class="TM-text2">
+                <h2>Cluster B</h2>
+                <p> Cluster B personality disorders are a group of mental health conditions that involve dramatic and erratic behaviors. They include antisocial personality disorder, borderline personality disorder, histrionic personality disorder, and narcissistic personality disorder. People with these disorders may have trouble limiting distorted thoughts, maintaining stable relationships, or controlling impulsive or aggressive behaviors.</p>
+            </div>
+            <div class="TM-text2">
+                <h2>Cluster C</h2>
+                <p>Cluster C personality disorders are a group of mental health conditions that involve anxious and fearful patterns of thinking and behavior. People with these disorders may have difficulty forming and maintaining relationships, trusting themselves, or coping with stress. The three types of cluster C personality disorders are avoidant, dependent, and obsessive-compulsive. Each one has its own specific symptoms and treatment options.</p>
+            </div>
+           </div>
+            <div class="Summary" id="Summary2">
+                <p></p>
+                <div id="Causes-and-Treatment"></div>
+            </div>
+        </section>  
+        <section class="Causes">
+            <div class="causes-text">
+                <h2>Cause</h2>
+                <p>The causes of personality disorders are not fully understood, but research suggests that a combination of genetic, environmental as well as psychological factors may have played a role in the development of personality disorders . Some possible causes of personality disorders include:
+                    <br>
+                    - Having a family history of mental disorders
+                    <br>
+                    - Experiencing abuse, neglect or trauma in childhood
+                    <br>
+                    - Having a sensitive or reactive temperament <br>
+                    - Having difficulties in relating to others or coping with stress
+                </p>
+            </div>
+            <div class="system-text">
+                <h2>Treatment</h2>
+                <p>The main treatment for personality disorders is psychotherapy, which is a form of talk therapy. Psychotherapy can help people understand their condition, develop coping skills, and improve their quality of life. Medication may also be used to treat the symptoms such as depression, anxiety, or mood swings. Sometimes, when a personality disorder is so severe that you are unable to take care of yourself or if you pose an immediate threat to yourself or others, you are brought in to stay in a hospital until you become stable. </p>
+            </div>
+            <div class="causes-img">
+                <img src="https://th.bing.com/th/id/OIP.SdTKqVKkmGiK6DuHuRQfKQHaE8?pid=ImgDet&rs=1">
 
-        <div class="TM">
-            <h2 id="TM.">Treatment</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,
+            </div>
+            <div class="Summary1" id="Summary3">
+                <p></p>
+                <div id="Views"></div>
+               </div>           
+        </section>
 
-            </p>
-            <div class="Summary">
-                <p>Text......</p>
+        <h2 id="View-Title">Views</h2>
+        <section class="Views">
+            <div class="Views-img">
+                <img src="https://th.bing.com/th/id/R.d04686faf393b52ab460cedc6427f0c0?rik=9uSblnwU%2fwwLpA&pid=ImgRaw&r=0&sres=1&sresct=1">
+                <p>Image by </p>          
             </div>
-        </div>
-        <div class="Views">
-            <h2 id="Views.">Views</h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, 
-                augue velit cursus nunc, </p>
-            <div class="Summary">
-            <p>Text......</p>
+            <div class="Views-Text">
+                <p>Personality disorders are often misunderstood and stigmatized by society. People with personality disorders may face discrimination, rejection, isolation, and ridicule from others who do not understand their condition, using their knowledge from movies. Many clinicians avoid diagnosing children with personality disorder because of the stigma around the subject. This is common with many clinicians and is even enforced by some health professionals.
+                    Some common negative that people have about personality disorders are: <br>
+                    - They are not real mental illnesses, but rather excuses for bad behavior or lack of character. <br>
+                    - They are caused by poor parenting, trauma, or personal choice, and can be easily changed or cured by willpower or therapy. <br>
+                    - They make people dangerous, violent, manipulative, or antisocial, and they should be avoided or punished. <br>
+                    This prevents people with personality disorders from getting the support and treatment.        </div>      
+            <div class="Summary1" id="Summary4">
+            <p></p>
             </div>
-        </div>
-    </main>
+        </section>
     <footer>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Play&display=swap">
         <div class="footer">
             <section class="Credits">
-             <div id="Credits.">
+             <div id="Credits">
                 <h2>Credits</h2></div>
               <ul>
-              <li><a href="#">Credits1</a></li>
-              <li><a href="#">Credits2</a></li>
-              <li><a href="#">Credits3</a></li>
-              <li><a href="#">Credits4</a></li>
-              <li><a href="#">Credits5</a></li>
+              <li><a href="https://www.mayoclinic.org/diseases-conditions/personality-disorders/symptoms-causes/syc-20354463">Mayoclinic</a></li>
+              <li><a href="https://www.cambridge.org/core/services/aop-cambridge-core/content/view/DB0AAB8B628DBBA14C1E28A32FE2692D/S0955603600068227a.pdf/changing-media-representations-of-mental-health.pdf">Cambridge</a></li>
+              <li><a href="https://www.thelancet.com/action/showPdf?pii=S0140-6736%2814%2961283-6">The Lancet</a></li>
+              <li><a href="https://www.researchgate.net/publication/341496079_Borderline_Personality_Disorder">Research Gate</a></li>
+              <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6327594/">National Center for Biotechnology</a></li>
              </ul>          
-             <h3>Go to Summary</h3>
-             <ul>
-                <li><a href="#Summary1">Summary1</a></li>
-                <li><a href="#">Summary1</a></li>
-                <li><a href="#">Summary1</a></li>
-                <li><a href="#">Summary1</a></li>  
-             </ul>
             </section>
             </div>
     </footer>
