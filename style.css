@@ -36,7 +36,7 @@ html{
 }
 .navbar h1{
     margin: 1px;
-    left: px;
+    left: 0px;
     position: relative;
     align-items: normal;
     text-decoration: none;
@@ -615,7 +615,6 @@ html{
 }
 .footer .Credits ul li{
     display:block;
-    resize: 0;
     margin:10px 0px;
     text-align:left;
     }
