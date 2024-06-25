@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;   
+}
+.merriweather-light {
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+header {
+    text-align: center;
+    background-image: url("https://images.pexels.com/photos/19802887/pexels-photo-19802887/free-photo-of-power-cables-on-a-railway.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    height: 400px;
+}
+header h1{
+    margin: auto;
+}
+ header p{
+    height: 200px;
+ }
+
+body{
+    background-color: gray;
+}
