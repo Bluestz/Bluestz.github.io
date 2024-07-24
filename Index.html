@@ -1,30 +1,53 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title> Cybersecurity</title>
-        <link rel="stylesheet" href="Style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-        
-    </head>
-    <nav>
-      <ul>
-        <li><a href="#Cyber">Cybersecurity</a></li>
-        <li><a href="#Data">Data</a></li>
-        <li><a href="#Internet">Interent</a></li>
-        <li><a href="#Habits">Habits</a></li>
-        <li><a href="#Mobile">Mobile</a></li>                
-      </ul>
-    </nav>
+<html lang="en">
+  <head>
+    <title> Cybersecurity</title>
+    <link rel="stylesheet" href="Style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>    
     <header>
+      <nav id="nav">
+        <ul>
+          <li><img src='https://cdn.iconscout.com/icon/premium/png-512-thumb/image-7249189-5963089.png?f=webp&w=256' alt="Logo"></li>
+          <li><a href="#Cyber">Cybersecurity</a></li>
+          <li><a href="#Data">Data</a></li>
+          <li><a href="#Internet">Interent</a></li>
+          <li><a href="#Habits">Habits</a></li>
+          <li><a href="#Mobile">Mobile</a></li>                
+        </ul>
+      </nav>
+      <script>
+        window.onscroll = function() {
+           scroll();
+        };
+     
+        function scroll() {
+           if (
+              document.body.scrollTop > 20 ||
+              document.documentElement.scrollTop > 20
+           ) {
+              document.getElementById("nav").style.top = "-60px";
+           } else {
+              document.getElementById("nav").style.top = "0";
+           }
+        }
+      </script>
+      <div class="title">
         <h1>Cybersecurity</h1>
         <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+        <button onclick="location.href='#Cyber'" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
+       </svg></button>
+      </div>
     </header>
-    <body>
       <section id="Cyber">
-        <h2> What is cybersecurity and the importance of it.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p> 
+        <div id="CText">
+          <h2> What is cybersecurity and the importance of it.</h2>
+          <p>Cybersecurity is the practice of protecting your devices such as computer, mobile devices and other systems and data from cyber-attacks, involving the act of preventing, recovering, responding to those attacks. This is important as it helps protect sensitive information such as bank details, medical history, and other sensitive information from being leaked into the internet. The importance of cybersecurity continues to grow as time goes on, so ensuring the safety and security of digital spaces for individuals and organizations is important.</p>   
+        </div>
       </section>
       <section id="Data">
         <h2> Your data and privacy</h2>
@@ -36,25 +59,26 @@
       </section> 
       <section id="Habits">
         <h2>Security Habits</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p>
+        <p>Having good security habits can help keep your private data safe online. These are some habits you should have when going on the internet: Create strong, unique passwords for each account you have, enable two-factor authentication for an extra layer of security, always make sure your software is up to date to protect against vulnerabilities, don't click on suspicious links or attachments, install a antivirus software and keep it up to date. Use a VPN if you are connecting to a public Wi-Fi to encrypt your connection, keep checking on your bank statements and accounts regularly for any unusual activity. Keeping up to date on the latest cybersecurity threats and what are the best practices. These simple habits can go a long way in protecting you from cyber threats.</p>
       </section>  
       <section id="Mobile">
-        <h2>Mobile Devices</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p>
+        <div>
+         <h2>Mobile Devices</h2>
+         <p>Mobile devices have become more and more common in todays' world, however this led to cyberattacks to change their focus more to mobile devices, resulting in the knowledge of mobile security becoming more important. There are many ways you can protect your mobile from cyberthreats such as setting up a strong password or use fingerprint or facial recognition on your mobile device so no one can tampering with it if you leave it unattended, changing your notification setting to decide what is displayed in lock screen (android), and enabling Find My Device or Find My iPhone to be able track, find and even erase your phone. Always enable two-factor authentication on your accounts. Make sure you update your phone and apps regularly to keep everything safe. Download apps from trusted sources like the Google Play Store or Apple App Store. Be cautious when using public Wi-Fi and consider using a VPN for added security. Install a good antivirus app, regularly back up your data, and keep an eye on app permissions to ensure they only access what they need. Look out for phishing scams and never click on suspicious links. </p>
+        </div>
       </section>
       <section id="Information">  
         <h2>Information</h2>
-        <img src="https://huismarseille.nl/app/uploads/2016/03/Berlin_Nationalgalerie_HMA-2002-01.jpg" alt="fefr" weight="200" height="200">
+        <img src="https://huismarseille.nl/app/uploads/2016/03/Berlin_Nationalgalerie_HMA-2002-01.jpg" alt="fefr" width="200" height="200">
           <form> 
-            <input type="radio" id="InformA" name="Inform"></input><label for="InformA">P1</label>
-            <input type="radio" id="InformB" name="Inform"></input><label for="InformB">P2</label>
-            <input type="radio" id="InformC" name="Inform"></input><label for="InformC">P3</label>
-            <input type="radio" id="InformD" name="Inform"></input><label for="InformD">P4</label>
+            <input type="radio" id="InformA" name="Inform"><label for="InformA">P1</label>
+            <input type="radio" id="InformB" name="Inform"><label for="InformB">P2</label>
+            <input type="radio" id="InformC" name="Inform"><label for="InformC">P3</label>
+            <input type="radio" id="InformD" name="Inform"><label for="InformD">P4</label>
           </form>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p>   
       </section>
-    </body>
-    <footer>
+      <footer>
         <h3>Footer</h3>
         <ul> 
             <li>1</li>
@@ -62,4 +86,5 @@
             <li>3</li>
         </ul>
     </footer>
+  </body>
 </html>

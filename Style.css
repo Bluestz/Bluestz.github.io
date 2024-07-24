@@ -3,6 +3,34 @@
     padding: 0;
     overflow-x: hidden;   
 }
+nav{
+    width: 100%;
+    margin: auto;
+    padding: 5px 0;
+    display: flex;
+    transition: 0.5s;
+    align-items: center;
+    top: -10px;
+    position: fixed;
+    justify-content: space-between;
+    background-color: #000;
+    z-index: 50;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+    position: relative;
+}
+nav ul li a{
+    margin: auto;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color:#fff;
+}
 .merriweather-light {
     font-family: "Merriweather", serif;
     font-weight: 300;
@@ -10,16 +38,55 @@
   }
 header {
     text-align: center;
-    background-image: url("https://images.pexels.com/photos/19802887/pexels-photo-19802887/free-photo-of-power-cables-on-a-railway.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
-    height: 400px;
-}
-header h1{
+    background-color:  #141824;
+    height: 350px;
     margin: auto;
+    position: relative;
+    padding:50px 0;
 }
- header p{
-    height: 200px;
- }
-
+.title h1{
+    text-align: center;
+    position: relative;
+    margin-top: 60px;
+    color:white;
+}
+.title p{
+text-align: center;
+margin: auto;
+padding: 20px;
+position: relative;
+color:white;
+}
 body{
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
+}
+img{
+    width:50px;
+    height:50px;
+}
+button{
+    width: 50px;
+    height:50px;
+}
+section p{
+    width: 80%;    
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+section{
+    align-items: center;
+    text-align: center;
+}
+body{
+    background-color: #20191b;
+    color:rgb(201, 198, 198);
+}
+.Cyber h1{
+    font-size:30px;
+    padding-top: 50px;
+    text-align: center;
+    padding-bottom: 30px;
 }
