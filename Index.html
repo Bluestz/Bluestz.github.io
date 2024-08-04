@@ -7,42 +7,51 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
-  <body>    
-    <header>
-      <nav id="nav">
-        <ul>
-          <li><img src='https://cdn.iconscout.com/icon/premium/png-512-thumb/image-7249189-5963089.png?f=webp&w=256' alt="Logo"></li>
-          <li><a href="#Cyber">Cybersecurity</a></li>
-          <li><a href="#Data">Data</a></li>
-          <li><a href="#Internet">Interent</a></li>
-          <li><a href="#Habits">Habits</a></li>
-          <li><a href="#Mobile">Mobile</a></li>                
-        </ul>
-      </nav>
-      <script>
-        window.onscroll = function() {
-           scroll();
-        };
-     
-        function scroll() {
-           if (
-              document.body.scrollTop > 20 ||
-              document.documentElement.scrollTop > 20
-           ) {
-              document.getElementById("nav").style.top = "-60px";
-           } else {
-              document.getElementById("nav").style.top = "0";
-           }
-        }
-      </script>
+  <body>
+    <nav id="nav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <div id="continer">      
+       <ul>
+         <li><a href="#Cyber">Cybersecurity</a></li>
+         <li><a href="#Data">Data</a></li>
+         <li><a href="#Internet">Interent</a></li>
+         <li><a href="#Habits">Habits</a></li>
+         <li><a href="#Mobile">Mobile</a></li>                
+       </ul> 
+      </div>
+    </nav>     
+    <script>
+      window.onscroll = function() {
+         scroll();
+      };
+   
+      function scroll() {
+         if (
+            document.body.scrollTop > 20 ||
+            document.documentElement.scrollTop > 20
+         ) {
+            document.getElementById("nav").style.top = "-60px";
+         } else {
+            document.getElementById("nav").style.top = "0";
+         }
+      }
+    </script>
+    <header class="background-img">
       <div class="title">
         <h1>Cybersecurity</h1>
-        <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
-        <button onclick="location.href='#Cyber'" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L7.5 13.293V1.5A.5.5 0 0 1 8 1"/>
-       </svg></button>
+        <p>By 2024, cybercrime is expected to cost the world $9.5 trillion every year, <br> which makes it more important than ever to have <br> strong cybersecurity measures in place</p>
       </div>
+      <img class="full-image" src="https://images.pexels.com/photos/19832983/pexels-photo-19832983/free-photo-of-silhouetted-interior-with-a-large-window-with-a-panoramic-view-of-a-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">  
+      <a href="#Cyber" class="arrow" onclick="scrollToSection">&#8595;</a>
+      <script>
+        function scrollToSection(){
+          $('html, body').animate({
+                 scrollTop: $('#section1').offset().top
+            }, 500);
+        }
+        </script>
     </header>
+    <main id="main">
       <section id="Cyber">
         <div id="CText">
           <h2> What is cybersecurity and the importance of it.</h2>
@@ -51,7 +60,8 @@
       </section>
       <section id="Data">
         <h2> Your data and privacy</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p>
+        <p>Knowing ensuring personal and sensitive information is collected, stored, and used responsibly, legally, and ethically. It involves protecting data from unauthorized access and breaches, which can lead to identity theft, financial loss, and reputational damage. Key aspects of data privacy include personal data protection, encryption, data anonymization, and access controls. Regulations like the GDPR, CCPA, and HIPAA set guidelines for data protection and grant individuals rights over their data. Best practices for maintaining data privacy include data minimization, regular audits, user education, and secure software development. With the increasing volume of data and advanced cyber threats, organizations must continuously innovate their cybersecurity strategies while balancing privacy and innovation to maintain public trust.
+        </p>
       </section>
       <section id="Internet">    
         <h2>Browsing on the internet</h2>
@@ -69,22 +79,36 @@
       </section>
       <section id="Information">  
         <h2>Information</h2>
-        <img src="https://huismarseille.nl/app/uploads/2016/03/Berlin_Nationalgalerie_HMA-2002-01.jpg" alt="fefr" width="200" height="200">
-          <form> 
-            <input type="radio" id="InformA" name="Inform"><label for="InformA">P1</label>
-            <input type="radio" id="InformB" name="Inform"><label for="InformB">P2</label>
-            <input type="radio" id="InformC" name="Inform"><label for="InformC">P3</label>
-            <input type="radio" id="InformD" name="Inform"><label for="InformD">P4</label>
-          </form>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p>   
+        <p style="margin-bottom: 10px;">By staying informed on the latest cybersecurity threats and what the best practices are, it would reduce the chances of you falling victim to these threats, creating a safer internet browsing experience.  
+          This includes recognizing phishing attempts, using strong and unique passwords, enabling two-factor authentication, and being cautious about sharing personal information online. Education and awareness programs can provide valuable knowledge on how to safeguard personal data and recognize potential security breaches.
+        </p>   
       </section>
-      <footer>
-        <h3>Footer</h3>
-        <ul> 
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
+    </main>
+    <footer>
+      <div class="contin">
+        <h2>Footer</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Incidunt consequuntur amet culpa cum itaque neque.</p>
+        <svg  id='lo1'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+        </svg>
+        <svg  id='lo2'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-medium" viewBox="0 0 16 16">
+          <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"/>
+        </svg>
+        <svg id='lo3'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
+          <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
+        </svg>
+        <svg id='lo4'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-opencollective" viewBox="0 0 16 16">
+          <path fill-opacity=".4" d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z"/>
+          <path d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z"/>
+        </svg>
+       </div>
+       <div class="Source">
+        <h3>Sources</h3>
+        <ul>
+          <li>source1</li>
+          <li>source1</li>
         </ul>
+       </div>
     </footer>
   </body>
 </html>
