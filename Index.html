@@ -9,47 +9,57 @@
   </head>
   <body>
     <nav id="nav" class="overlay">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-      <div id="continer">      
-       <ul>
-         <li><a href="#Cyber">Cybersecurity</a></li>
-         <li><a href="#Data">Data</a></li>
-         <li><a href="#Internet">Interent</a></li>
-         <li><a href="#Habits">Habits</a></li>
-         <li><a href="#Mobile">Mobile</a></li>                
-       </ul> 
+      <div class="nav-menu">
+        <ul class="menu">
+          <li class="nav-item"><a href="#Cyber">Cybersecurity</a></li>
+          <li class="nav-item"><a href="#Data">Data</a></li>
+          <li class="nav-item"><a href="#Internet">Interent</a></li>
+          <li class="nav-item"><a href="#Habits">Habits</a></li>
+          <li class="nav-item"><a href="#Mobile">Mobile</a></li>                
+        </ul>
       </div>
-    </nav>     
-    <script>
-      window.onscroll = function() {
-         scroll();
-      };
-   
-      function scroll() {
-         if (
-            document.body.scrollTop > 20 ||
-            document.documentElement.scrollTop > 20
-         ) {
-            document.getElementById("nav").style.top = "-60px";
-         } else {
-            document.getElementById("nav").style.top = "0";
-         }
+    </nav>
+    <div id="mob-navbar">
+      <div class="nav-container">
+        <div class="icon-container">
+          <input class="checkbox" type="checkbox" name="" id="button" checked />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+        </div>
+        <ul id="mobile-menu">
+          <li><a href="#Cyber">Cybersecurity</a></li>
+          <li><a href="#Data">Data</a></li>
+          <li><a href="#Internet">Interent</a></li>
+          <li><a href="#Habits">Habits</a></li>
+          <li><a href="#Views">Views</a></li>
+          <li><a href="#Mobile">Mobile</a></li> 
+       </ul>
+      </div>
+    </div>
+    <script> 
+    var button = document.getElementById("button")
+      var mobilenav = document.getElementById("mobile-menu")
+      button.onclick = function(){
+          if(mobilenav.style.right=='-250px'){
+            mobilenav.style.right= '0'
+          }
+          else{
+            mobilenav.style.right= '-250px'
+          }
+          
       }
+
     </script>
+    <script src="Back.Js"></script>
     <header class="background-img">
       <div class="title">
         <h1>Cybersecurity</h1>
         <p>By 2024, cybercrime is expected to cost the world $9.5 trillion every year, <br> which makes it more important than ever to have <br> strong cybersecurity measures in place</p>
       </div>
-      <img class="full-image" src="https://images.pexels.com/photos/19832983/pexels-photo-19832983/free-photo-of-silhouetted-interior-with-a-large-window-with-a-panoramic-view-of-a-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">  
       <a href="#Cyber" class="arrow" onclick="scrollToSection">&#8595;</a>
-      <script>
-        function scrollToSection(){
-          $('html, body').animate({
-                 scrollTop: $('#section1').offset().top
-            }, 500);
-        }
-        </script>
     </header>
     <main id="main">
       <section id="Cyber">
@@ -64,11 +74,15 @@
         </p>
       </section>
       <section id="Internet">    
-        <h2>Browsing on the internet</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. Vestibulum vel diam sollicitudin, ultrices risus eu, posuere mauris. Nunc non ullamcorper diam, sed tincidunt augue. Etiam bibendum augue id arcu sodales viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at faucibus felis.</p> 
+        <div class="Data-Container">
+          <h2>Browsing on the internet</h2>
+        </div>  
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. </p>   
       </section> 
       <section id="Habits">
-        <h2>Security Habits</h2>
+        <div class="H-Continer">
+          <h2>Security Habits</h2>
+        </div>
         <p>Having good security habits can help keep your private data safe online. These are some habits you should have when going on the internet: Create strong, unique passwords for each account you have, enable two-factor authentication for an extra layer of security, always make sure your software is up to date to protect against vulnerabilities, don't click on suspicious links or attachments, install a antivirus software and keep it up to date. Use a VPN if you are connecting to a public Wi-Fi to encrypt your connection, keep checking on your bank statements and accounts regularly for any unusual activity. Keeping up to date on the latest cybersecurity threats and what are the best practices. These simple habits can go a long way in protecting you from cyber threats.</p>
       </section>  
       <section id="Mobile">
@@ -82,6 +96,12 @@
         <p style="margin-bottom: 10px;">By staying informed on the latest cybersecurity threats and what the best practices are, it would reduce the chances of you falling victim to these threats, creating a safer internet browsing experience.  
           This includes recognizing phishing attempts, using strong and unique passwords, enabling two-factor authentication, and being cautious about sharing personal information online. Education and awareness programs can provide valuable knowledge on how to safeguard personal data and recognize potential security breaches.
         </p>   
+      </section>
+      <section class="Quizzes">
+        <button>card</button>
+        <button>card</button>
+        <button>card</button>
+        <button>card</button>
       </section>
     </main>
     <footer>

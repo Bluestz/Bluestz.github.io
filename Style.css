@@ -3,9 +3,11 @@
     padding: 0;
     overflow-x: hidden;   
 }
+
 :before, :after{
     box-sizing: inherit;
 }
+
 #nav ul li{
     margin: auto;
     display: block;
@@ -18,7 +20,107 @@
 #nav ul li a{
     color:#fff;
 }
+@media screen and (max-width: 769px){
+    #nav{
+        display: none;
+        visibility: hidden;
+        
+    }
+    #mobile-menu{
+        width: 120px;
+        padding-top: 50px;
+        height: 100vh;
+        position: fixed;
+        right: 0px;
+        top: 0px;
+        z-index: 3;
+        background: #202020;
+        transition: 0.5s;
+    }
+    #mob-navbar ul li{
+        list-style: none;
+        margin: 50px 20px;
+    }
+    #mob-navbar ul li a{
+        text-decoration: none;
+        font-size: 15px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+    }
+    .nav-container .icon-container{
+        background-color: #512020;
+        height: 10vh;
+        width: 100%;
+        position: fixed;
+        z-index: 50;
+    }
+    .nav-container .checkbox {
+        position: fixed;
+        display: block;
+        height: 32px;
+        width: 32px;
+        top: 20px;
+        right: 50px;
+        z-index: 59;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .nav-container .hamburger-lines {
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: fixed;
+        top: 17px;
+        right: 50px;
+        z-index: 29;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .nav-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #ffffff;
+      }
+      
+      .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0);
+      }
+      
+      .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg);
+      }
+
+      
+}
 @media screen and (min-width: 769px) {
+    #mob-navbar{
+        display: none;
+        visibility: hidden;
+    }
+
     #nav{
         background-color: #000;
         width: 100%;
@@ -60,6 +162,11 @@
     color: #FFF;
     height: 80vh;
     text-align: center;
+    background-image: url('https://images.pexels.com/photos/19832983/pexels-photo-19832983/free-photo-of-silhouetted-interior-with-a-large-window-with-a-panoramic-view-of-a-city.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .background-img{
     min-height: 100%;
@@ -149,7 +256,7 @@ body{
     background-color: #141824;
     color:rgb(201, 198, 198);
 }
-section p{
+section p {
     width: 80%;    
     align-items: center;
     text-align: center;
@@ -160,10 +267,33 @@ section p{
 section{
     align-items: center;
     text-align: center;
+    margin: 50px 0;
 }
-main{
-    background-color: #141824;
+#Internet h2, #Habits h2{
+    background-color: #000000;
+
 }
+.Data-Container{
+    background-image: url('https://images.pexels.com/photos/27579814/pexels-photo-27579814/free-photo-of-a-lone-person-standing-on-the-shore-of-a-lake.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+.H-Continer{
+    background-image: url('https://images.pexels.com/photos/2928027/pexels-photo-2928027.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px;
+}
+#Internet p, #Habits p{
+    background-color: #000;
+    padding: 0 50px;
+}
+
 footer{
     text-align: center;
     background-color:#1b2030 ;
