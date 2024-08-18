@@ -3,132 +3,163 @@
   <head>
     <title> Cybersecurity</title>
     <link rel="stylesheet" href="Style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <nav id="nav" class="overlay">
-      <div class="nav-menu">
-        <ul class="menu">
-          <li class="nav-item"><a href="#Cyber">Cybersecurity</a></li>
-          <li class="nav-item"><a href="#Data">Data</a></li>
-          <li class="nav-item"><a href="#Internet">Interent</a></li>
-          <li class="nav-item"><a href="#Habits">Habits</a></li>
-          <li class="nav-item"><a href="#Mobile">Mobile</a></li>                
-        </ul>
+    <script src="Back.Js"></script>
+    <header>
+      <a href="#" class="logo">Logo</a>
+
+      <ul class="menu show-menu" id="nav-menu">
+        <li class="nav-item"><a href="#Cyber" id="nav-item">Cybersecurity</a></li>
+        <li class="nav-item"><a href="#Data" id="nav-item">Data</a></li>
+        <li class="nav-item"><a href="#Internet" id="nav-item">Interent</a></li>
+        <li class="nav-item"><a href="#Habits" id="nav-item">Habits</a></li>
+        <li class="nav-item"><a href="#Mobile" id="nav-item">Mobile</a></li>                
+      </ul>
+
+      <div class="nav__toggle" id="menu-icon"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg></a>
       </div>
-    </nav>
-    <div id="mob-navbar">
-      <div class="nav-container">
-        <div class="icon-container">
-          <input class="checkbox" type="checkbox" name="" id="button" checked />
-          <div class="hamburger-lines">
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </div>
-        </div>
-        <ul id="mobile-menu">
-          <li><a href="#Cyber">Cybersecurity</a></li>
-          <li><a href="#Data">Data</a></li>
-          <li><a href="#Internet">Interent</a></li>
-          <li><a href="#Habits">Habits</a></li>
-          <li><a href="#Views">Views</a></li>
-          <li><a href="#Mobile">Mobile</a></li> 
-       </ul>
-      </div>
-    </div>
-    <script> 
-    var button = document.getElementById("button")
-      var mobilenav = document.getElementById("mobile-menu")
-      button.onclick = function(){
-          if(mobilenav.style.right=='-250px'){
-            mobilenav.style.right= '0'
+    </header>
+    <script>
+      var Menubutton = document.getElementById("menu-icon")
+      var mobile_nav = document.getElementById('nav-menu')
+      var nav_item = document.getElementById('nav-item')
+      Menubutton.onclick = function(){
+          if(mobile_nav.style.height=='100vh'){
+             mobile_nav.style.height= '0'
           }
+          
           else{
-            mobilenav.style.right= '-250px'
+            mobile_nav.style.height= '100vh'
           }
           
       }
-
-    </script>
-    <script src="Back.Js"></script>
-    <header class="background-img">
+  </script>
+    <section class="home">
       <div class="title">
         <h1>Cybersecurity</h1>
         <p>By 2024, cybercrime is expected to cost the world $9.5 trillion every year, <br> which makes it more important than ever to have <br> strong cybersecurity measures in place</p>
       </div>
-      <a href="#Cyber" class="arrow" onclick="scrollToSection">&#8595;</a>
-    </header>
+      <a href="#Cyber" class="arrow">&#8595;</a>  
+    </section>
+
+
     <main id="main">
-      <section id="Cyber">
-        <div id="CText">
-          <h2> What is cybersecurity and the importance of it.</h2>
+      <section class="Cyber" id="Cyber">
+        <div class="Cyber-img">
+          <img src="https://images.pexels.com/photos/15236842/pexels-photo-15236842/free-photo-of-woman-at-ruins-of-library-of-celsus.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+        </div>
+        <div class="Cyber-text">
+          <h2> What is cybersecurity and <br> the importance of it</h2>
           <p>Cybersecurity is the practice of protecting your devices such as computer, mobile devices and other systems and data from cyber-attacks, involving the act of preventing, recovering, responding to those attacks. This is important as it helps protect sensitive information such as bank details, medical history, and other sensitive information from being leaked into the internet. The importance of cybersecurity continues to grow as time goes on, so ensuring the safety and security of digital spaces for individuals and organizations is important.</p>   
         </div>
       </section>
       <section id="Data">
-        <h2> Your data and privacy</h2>
-        <p>Knowing ensuring personal and sensitive information is collected, stored, and used responsibly, legally, and ethically. It involves protecting data from unauthorized access and breaches, which can lead to identity theft, financial loss, and reputational damage. Key aspects of data privacy include personal data protection, encryption, data anonymization, and access controls. Regulations like the GDPR, CCPA, and HIPAA set guidelines for data protection and grant individuals rights over their data. Best practices for maintaining data privacy include data minimization, regular audits, user education, and secure software development. With the increasing volume of data and advanced cyber threats, organizations must continuously innovate their cybersecurity strategies while balancing privacy and innovation to maintain public trust.
-        </p>
+        <div class="Data-container">
+          <h2> Your data and privacy</h2>
+          <p>Knowing ensuring personal and sensitive information is collected, stored, and used responsibly, legally, and ethically. It involves protecting data from unauthorized access and breaches, which can lead to identity theft, financial loss, and reputational damage. Key aspects of data privacy include personal data protection, encryption, data anonymization, and access controls. Regulations like the GDPR, CCPA, and HIPAA set guidelines for data protection and grant individuals rights over their data. Best practices for maintaining data privacy include data minimization, regular audits, user education, and secure software development. With the increasing volume of data and advanced cyber threats, organizations must continuously innovate their cybersecurity strategies while balancing privacy and innovation to maintain public trust.
+          </p>
+        </div>
       </section>
-      <section id="Internet">    
-        <div class="Data-Container">
-          <h2>Browsing on the internet</h2>
-        </div>  
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. </p>   
+      <section class="Internet" id="Internet">    
+        <div class="Internet-text">
+          <h2>Browsing on the internet</h2>  
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque tempor iaculis lorem vel dapibus. Phasellus luctus elit sed fringilla volutpat. Donec lacinia ligula ante, eu luctus eros viverra vitae. Mauris ut diam sit amet mi viverra consequat. Quisque volutpat, dolor ut hendrerit scelerisque, massa dui pellentesque tortor, sed mattis velit eros eu leo. Nullam vel diam tortor. Donec accumsan nunc id dictum fermentum. Donec vel iaculis justo. Suspendisse ligula libero, vestibulum a diam eu, ornare eleifend ante. Cras augue ligula, commodo et risus ut, tempor tincidunt sem. Integer accumsan sem et sodales egestas. </p>   
+        </div>
+        <div class="Internet-img">
+          <img src="https://images.pexels.com/photos/27520822/pexels-photo-27520822/free-photo-of-a-view-of-a-window-with-a-view-of-a-garden.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""> 
+        </div>
       </section> 
+      <div class="split"></div>
       <section id="Habits">
         <div class="H-Continer">
           <h2>Security Habits</h2>
+          <p>Having good security habits can help keep your private data safe online. These are some habits you should have when going on the internet: Create strong, unique passwords for each account you have, enable two-factor authentication for an extra layer of security, always make sure your software is up to date to protect against vulnerabilities, don't click on suspicious links or attachments, install a antivirus software and keep it up to date. Use a VPN if you are connecting to a public Wi-Fi to encrypt your connection, keep checking on your bank statements and accounts regularly for any unusual activity. Keeping up to date on the latest cybersecurity threats and what are the best practices. These simple habits can go a long way in protecting you from cyber threats.</p>
         </div>
-        <p>Having good security habits can help keep your private data safe online. These are some habits you should have when going on the internet: Create strong, unique passwords for each account you have, enable two-factor authentication for an extra layer of security, always make sure your software is up to date to protect against vulnerabilities, don't click on suspicious links or attachments, install a antivirus software and keep it up to date. Use a VPN if you are connecting to a public Wi-Fi to encrypt your connection, keep checking on your bank statements and accounts regularly for any unusual activity. Keeping up to date on the latest cybersecurity threats and what are the best practices. These simple habits can go a long way in protecting you from cyber threats.</p>
-      </section>  
-      <section id="Mobile">
-        <div>
+        </section>  
+      <section class="Mobile" id="Mobile">
+        <div class="Mob-img">
+          <img src="https://images.pexels.com/photos/27563723/pexels-photo-27563723/free-photo-of-the-view-of-a-building-with-a-reflection-of-the-sky.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+        <div class="Mob-text">
          <h2>Mobile Devices</h2>
          <p>Mobile devices have become more and more common in todays' world, however this led to cyberattacks to change their focus more to mobile devices, resulting in the knowledge of mobile security becoming more important. There are many ways you can protect your mobile from cyberthreats such as setting up a strong password or use fingerprint or facial recognition on your mobile device so no one can tampering with it if you leave it unattended, changing your notification setting to decide what is displayed in lock screen (android), and enabling Find My Device or Find My iPhone to be able track, find and even erase your phone. Always enable two-factor authentication on your accounts. Make sure you update your phone and apps regularly to keep everything safe. Download apps from trusted sources like the Google Play Store or Apple App Store. Be cautious when using public Wi-Fi and consider using a VPN for added security. Install a good antivirus app, regularly back up your data, and keep an eye on app permissions to ensure they only access what they need. Look out for phishing scams and never click on suspicious links. </p>
         </div>
       </section>
       <section id="Information">  
-        <h2>Information</h2>
-        <p style="margin-bottom: 10px;">By staying informed on the latest cybersecurity threats and what the best practices are, it would reduce the chances of you falling victim to these threats, creating a safer internet browsing experience.  
-          This includes recognizing phishing attempts, using strong and unique passwords, enabling two-factor authentication, and being cautious about sharing personal information online. Education and awareness programs can provide valuable knowledge on how to safeguard personal data and recognize potential security breaches.
-        </p>   
+        <div class="Inform-container">
+          <h2>Information</h2>
+          <p style="margin-bottom: 10px;">By staying informed on the latest cybersecurity threats and what the best practices are, it would reduce the chances of you falling victim to these threats, creating a safer internet browsing experience.  
+            This includes recognizing phishing attempts, using strong and unique passwords, enabling two-factor authentication, and being cautious about sharing personal information online. Education and awareness programs can provide valuable knowledge on how to safeguard personal data and recognize potential security breaches.
+          </p>
+        </div>
       </section>
       <section class="Quizzes">
-        <button>card</button>
-        <button>card</button>
-        <button>card</button>
-        <button>card</button>
+        <div class="text">
+          <h2>Quizzes</h2>
+        </div>
+
+        <div class="Quiz-content">
+          <div class="box">
+            <img src="https://images.pexels.com/photos/18765014/pexels-photo-18765014/free-photo-of-a-dry-autumnal-leaf-lying-in-a-puddle-on-the-ground.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h5>Quiz 1</h5>
+          </div>
+
+          <div class="box">
+            <img src="https://images.pexels.com/photos/19524957/pexels-photo-19524957/free-photo-of-bouquet-of-rowan-berries-wrapped-in-newspaper-on-a-table-filled-with-christmas-decorations-and-potted-plants.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h5>Quiz 2</h5>
+          </div>
+
+          <div class="box">
+            <img src="https://images.pexels.com/photos/17365300/pexels-photo-17365300/free-photo-of-steering-wheel-of-a-vintage-car.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+            <h5>Quiz 3</h5>
+          </div>
+
+        </div>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="contin">
-        <h2>Footer</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>Incidunt consequuntur amet culpa cum itaque neque.</p>
-        <svg  id='lo1'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
-          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
-        </svg>
-        <svg  id='lo2'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-medium" viewBox="0 0 16 16">
-          <path d="M9.025 8c0 2.485-2.02 4.5-4.513 4.5A4.506 4.506 0 0 1 0 8c0-2.486 2.02-4.5 4.512-4.5A4.506 4.506 0 0 1 9.025 8m4.95 0c0 2.34-1.01 4.236-2.256 4.236S9.463 10.339 9.463 8c0-2.34 1.01-4.236 2.256-4.236S13.975 5.661 13.975 8M16 8c0 2.096-.355 3.795-.794 3.795-.438 0-.793-1.7-.793-3.795 0-2.096.355-3.795.794-3.795.438 0 .793 1.699.793 3.795"/>
-        </svg>
-        <svg id='lo3'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pinterest" viewBox="0 0 16 16">
-          <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0"/>
-        </svg>
-        <svg id='lo4'xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-opencollective" viewBox="0 0 16 16">
-          <path fill-opacity=".4" d="M12.995 8.195c0 .937-.312 1.912-.78 2.693l1.99 1.99c.976-1.327 1.6-2.966 1.6-4.683 0-1.795-.624-3.434-1.561-4.76l-2.068 2.028c.468.781.78 1.679.78 2.732z"/>
-          <path d="M8 13.151a4.995 4.995 0 1 1 0-9.99c1.015 0 1.951.273 2.732.82l1.95-2.03a7.805 7.805 0 1 0 .04 12.449l-1.951-2.03a5.07 5.07 0 0 1-2.732.781z"/>
-        </svg>
-       </div>
-       <div class="Source">
-        <h3>Sources</h3>
-        <ul>
-          <li>source1</li>
-          <li>source1</li>
-        </ul>
-       </div>
+        <div class="footer_col">
+          <h2 class="ti">Footer</h2>
+          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.</p>  
+        </div>
+        <div class="footer_col">
+          <h4>Sources</h4>
+          <ul class="footer__links">
+            <li><a href="">Link1</a></li>
+            <li><a href="">Link2</a></li>
+            <li><a href="">Link3</a></li>
+          </ul>
+        </div>
+        <div class="footer_col">
+          <h4>Research</h4>
+          <ul class="footer__links">
+            <li><a href="">Link1</a></li>
+            <li><a href="">Link2</a></li>
+            <li><a href="">Link3</a></li>
+          </ul>
+        </div>
+        <div class="footer_col footer_4">
+          <h4 class="h5">Services</h4>
+          <div class="footer__socials">
+            <a href="#"><box-icon type='logo' name='github'></box-icon></a>
+            <a href="#"><box-icon type='logo' name='pinterest-alt'></box-icon></a>
+            <a href="#"><box-icon name='opera' type='logo' ></box-icon></a>
+            <a href="#"><box-icon name='invision' type='logo' ></box-icon></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bar">
+        
+      </div>
     </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

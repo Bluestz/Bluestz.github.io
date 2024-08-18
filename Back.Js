@@ -7,8 +7,9 @@ window.onscroll = function() {
        document.body.scrollTop > 20 ||
        document.documentElement.scrollTop > 20
     ) {
-       document.getElementById("nav").style.top = "-60px";
+       document.getElementById("nav-menu").style.top = "-60px";
     } else {
-       document.getElementById("nav").style.top = "0";
+       document.getElementById("nav).style.top = "0";
     }
  }
+
