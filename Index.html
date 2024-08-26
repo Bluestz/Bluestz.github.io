@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta http-equiv="Content-Type" content="text/html">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Cybersecurity</title>
     <link rel="stylesheet" href="Style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <script src="Back.Js"></script>
     <header>
+      <a href="#main" class="skip"> Skip to main content</a>
       <a href="#" class="logo">Logo</a>
 
       <ul class="menu show-menu" id="nav-menu">
-        <li class="nav-item"><a href="#Cyber" id="nav-item">Cybersecurity</a></li>
-        <li class="nav-item"><a href="#Data" id="nav-item">Data</a></li>
-        <li class="nav-item"><a href="#Internet" id="nav-item">Interent</a></li>
-        <li class="nav-item"><a href="#Habits" id="nav-item">Habits</a></li>
-        <li class="nav-item"><a href="#Mobile" id="nav-item">Mobile</a></li>                
+        <li class="nav-item"><a href="#Cyber">Cybersecurity</a></li>
+        <li class="nav-item"><a href="#Data">Data</a></li>
+        <li class="nav-item"><a href="#Internet">Interent</a></li>
+        <li class="nav-item"><a href="#Habits">Habits</a></li>
+        <li class="nav-item"><a href="#Mobile">Mobile</a></li>                
       </ul>
 
-      <div class="nav__toggle" id="menu-icon"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <div class="nav__toggle" id="menu-icon"> <a title="link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
         </svg></a>
       </div>
@@ -41,7 +41,7 @@
           
       }
   </script>
-    <section class="home">
+    <section class="home" id="main">
       <div class="title">
         <h1>Cybersecurity</h1>
         <p>By 2024, cybercrime is expected to cost the world $9.5 trillion every year, <br> which makes it more important than ever to have <br> strong cybersecurity measures in place</p>
@@ -49,11 +49,10 @@
       <a href="#Cyber" class="arrow">&#8595;</a>  
     </section>
 
-
     <main id="main">
       <section class="Cyber" id="Cyber">
         <div class="Cyber-img">
-          <img src="https://images.pexels.com/photos/15236842/pexels-photo-15236842/free-photo-of-woman-at-ruins-of-library-of-celsus.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+          <img src="https://images.pexels.com/photos/15236842/pexels-photo-15236842/free-photo-of-woman-at-ruins-of-library-of-celsus.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
         </div>
         <div class="Cyber-text">
           <h2> What is cybersecurity and <br> the importance of it</h2>
@@ -95,40 +94,104 @@
       <section id="Information">  
         <div class="Inform-container">
           <h2>Information</h2>
-          <p style="margin-bottom: 10px;">By staying informed on the latest cybersecurity threats and what the best practices are, it would reduce the chances of you falling victim to these threats, creating a safer internet browsing experience.  
+          <p>By staying informed on the latest cybersecurity threats and what the best practices are, it would reduce the chances of you falling victim to these threats, creating a safer internet browsing experience.  
             This includes recognizing phishing attempts, using strong and unique passwords, enabling two-factor authentication, and being cautious about sharing personal information online. Education and awareness programs can provide valuable knowledge on how to safeguard personal data and recognize potential security breaches.
           </p>
-        </div>
+        </div>              
       </section>
       <section class="Quizzes">
         <div class="text">
           <h2>Quizzes</h2>
         </div>
+        /
+        <dialog id="login-dialog">
+          <div class="wrapper" id="quiz">
+            <div class="quiz-header">
+              <h2 id="question">Question Text</h2>
+              <ul>
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Answer</label>
+                </li>
+              </ul>
+            </div>
+            <button onclick="showDialog(false)" type="button">close</button>
+          </div>
+        </dialog>
 
         <div class="Quiz-content">
-          <div class="box">
+          <div class="box" onclick="showDialog(true)">
             <img src="https://images.pexels.com/photos/18765014/pexels-photo-18765014/free-photo-of-a-dry-autumnal-leaf-lying-in-a-puddle-on-the-ground.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h5>Quiz 1</h5>
+            <h5>Cybersecurity Basics</h5>
           </div>
-
+          <dialog id="login-dialog">
+            <div class="wrapper" id="quiz">
+              <div class="quiz-header">
+                <h2 id="question">Question Text</h2>
+                <ul>
+                  <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Answer</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Answer</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Answer</label>
+                  </li>
+                  <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Answer</label>
+                  </li>
+                </ul>
+              </div>
+              <button onclick="showDialog(false)" type="button">close</button>
+            </div>
+          </dialog>
           <div class="box">
             <img src="https://images.pexels.com/photos/19524957/pexels-photo-19524957/free-photo-of-bouquet-of-rowan-berries-wrapped-in-newspaper-on-a-table-filled-with-christmas-decorations-and-potted-plants.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h5>Quiz 2</h5>
+            <h5>Data Privacy and Browsing</h5>
           </div>
 
           <div class="box">
             <img src="https://images.pexels.com/photos/17365300/pexels-photo-17365300/free-photo-of-steering-wheel-of-a-vintage-car.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
-            <h5>Quiz 3</h5>
+            <h5>Security Habits and Mobile Devices</h5>
           </div>
 
         </div>
+        <script>
+          const dialog =document.getElementById('login-dialog')
+          const wrapper =document.querySelector('.wrapper')
+          const showDialog = (show) => show ? dialog.showModal() : dialog.close()
+  
+          dialog.addEventListener('click', (e) => {
+            if(!wrapper.contains(e.target)){
+              dialog.close()
+            }
+          })
+        </script>
       </section>
+      <script src="Back.Js"></script>
     </main>
     <footer class="footer">
       <div class="contin">
         <div class="footer_col">
           <h2 class="ti">Footer</h2>
-          <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa cum itaque neque.</p>  
+          <p class="description">Protect your digital life by staying infromed with the cybersecurity tips <br> best practices.</p>  
         </div>
         <div class="footer_col">
           <h4>Sources</h4>
@@ -141,25 +204,15 @@
         <div class="footer_col">
           <h4>Research</h4>
           <ul class="footer__links">
-            <li><a href="">Link1</a></li>
-            <li><a href="">Link2</a></li>
+            <li><a href="https://staysafeonline.org/">Staysafeonline.org</a></li>
+            <li><a href="https://www.cisa.gov/topics/cybersecurity-best-practices">Cybersecurity 101 by CISA</a></li>
             <li><a href="">Link3</a></li>
           </ul>
         </div>
-        <div class="footer_col footer_4">
-          <h4 class="h5">Services</h4>
-          <div class="footer__socials">
-            <a href="#"><box-icon type='logo' name='github'></box-icon></a>
-            <a href="#"><box-icon type='logo' name='pinterest-alt'></box-icon></a>
-            <a href="#"><box-icon name='opera' type='logo' ></box-icon></a>
-            <a href="#"><box-icon name='invision' type='logo' ></box-icon></a>
-          </div>
-        </div>
       </div>
       <div class="footer__bar">
-        
+        <p>Made in Heaven 2024</p>
       </div>
     </footer>
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   </body>
 </html>

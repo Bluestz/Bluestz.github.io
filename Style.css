@@ -6,7 +6,6 @@
     list-style: none;
     text-decoration: none;
     border: none;
-    outline: none;
     scroll-behavior: smooth;
 }
 :root{
@@ -64,6 +63,19 @@ section{
     padding:70px 17% 60px;
 
 }
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+  }
 .home{
     height: 100vh;
     width: 100%;
@@ -79,11 +91,7 @@ section{
     align-items: center;
     justify-content: flex-start;
 }
-header.sticky{
-    padding: 8px 17%;
-    background: transparent;
-    backdrop-filter: blur(35px);
-}
+
 .title{
     width: 100%;
     position: relative;
@@ -200,6 +208,61 @@ header.sticky{
     margin-bottom: 35px;
     color: #fff;
 }
+dialog{
+    padding: 0;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+}
+::backdrop{
+    opacity: 0.5;
+    filter: blur(8px);
+}
+.wrapper{
+    background-color: #4c4f6e;
+    width: 80vw;
+    margin: auto;
+}
+@media screen and (min-width:760px) {
+    .wrapper{
+        width: 50vw;
+    }
+}
+dialog h2{
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+}
+dialog ul{
+  list-style-type: none;
+  padding: 0;
+}
+dialog ul li{
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+dialog ul li label{
+  cursor: pointer;
+}
+button{
+  background-color: #5e7d81;
+  color: #fff;
+  border: none;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-family: inherit;
+  padding: 1.3rem;
+}
+button:hover{
+  background-color: #16a7ba;
+}
+button:focus{
+  outline: none;
+  background-color: #1563a3;
+}
+
 
 .text{
     text-align: center;
@@ -228,7 +291,6 @@ header.sticky{
     transition: all .3s cubic-bezier(0.499, 0.05, 0.55, 0.95);
     will-change: auto;
     display: block;
-    -ms-overflow-style: none;
 }
 
 .box img:hover{
@@ -384,20 +446,19 @@ footer p{
 
 }
 .footer_col .description{
-    max-width: 350px;
+    width: 100%;
     text-align: center;
     position: relative;
-    left: 100px;
 }
 @media screen and (max-width:760px) {
     .footer_col .description{
-        max-width: 350px;
+
         text-align: center;
         position: relative;
         left: 10px;
     }
     .contin{
-        gap: 1rem 2rem;
+        gap: 1rem 0.25rem;
     }
 }
 .footer_col h4{
@@ -414,10 +475,7 @@ footer p{
     color: #fff;
     transition: all 0.3s ease;
 }
-.footer__socials box-icon{
-    width:100%;
-    height: 100%;
-}
+
 .footer_col a:hover{
     color: #ffa343;
 }
@@ -426,27 +484,14 @@ footer p{
     list-style: none;
     gap: 0.2rem;
 }
-.footer__socials{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
-}
-.footer__socials a{
-    font-size: 4rem;
-}
 .footer__bar{
     color: #979797;
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 0.25rem;
     text-align: center;
 
 }
 
-.footer_4{
-    display: none;
-    visibility: hidden;
-}
 @media screen and (min-width:480px) {
     .contin{
         grid-template-columns: repeat(5, 1fr);
