@@ -107,13 +107,29 @@ const quizData3 = [
 
 
 const quiz= document.getElementById('quiz')
+const quiz2= document.getElementById('quiz2')
+const quiz3= document.getElementById('quiz3')
 const answerEls = document.querySelectorAll('.answer')
+const answerEs = document.querySelectorAll('.answer2')
+const answerE3 = document.querySelectorAll('.answer3')
 const questionEl = document.getElementById('question')
+const questionl = document.getElementById('question2')
+const question2 = document.getElementById('question3')
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
 const d_text = document.getElementById('d_text')
+const fir_text = document.getElementById('1_text')
+const sec_text = document.getElementById('2_text')
+const thir_text = document.getElementById('3_text')
+const four_text = document.getElementById('4_text')
+const q_text = document.getElementById('q_text')
+const w_text = document.getElementById('w_text')
+const e_text = document.getElementById('e_text')
+const r_text = document.getElementById('r_text')
 const submitBtn = document.getElementById('submit')
+const submitBtn2 = document.getElementById('submit2')
+const submitBtn3 = document.getElementById('submit3')
 let currentQuiz = 0
 let score = 0
 loadQuiz()
@@ -155,3 +171,84 @@ submitBtn.addEventListener('click', () => {
       }
    }
 })
+let currentQuiz1 = 0
+let score1 = 0
+loadQuiz2()
+function loadQuiz2() {
+    deselectAnswers2()
+    const currentQuizData2 = quizData2[currentQuiz1]
+    questionl.innerText = currentQuizData2.question
+    fir_text.innerText = currentQuizData2.a
+    sec_text.innerText = currentQuizData2.b
+    thir_text.innerText = currentQuizData2.c
+    four_text.innerText = currentQuizData2.d
+ }
+ function deselectAnswers2() {
+    answerEs.forEach(answerE => answerE.checked = false)
+ }
+ function getSelected1() {
+    let answer1
+    answerEs.forEach(answerEl => {
+        if(answerEl.checked) {
+            answer1 = answerEl.id
+        }
+    })
+    return answer1
+ }
+ submitBtn2.addEventListener('click', () => {
+    const answer2 = getSelected1()
+    if(answer2) {
+       if(answer2 === quizData2[currentQuiz1].correct) {
+           score++
+       }
+       currentQuiz1++
+       if(currentQuiz1 < quizData2.length) {
+           loadQuiz2()
+       } else {
+           quiz2.innerHTML = `
+           <h2>You answered ${score}/${quizData2.length} questions correctly</h2>
+           <button onclick="location.reload()">Reload</button>
+           `
+       }
+    }
+ })
+
+ loadQuiz3()
+ function loadQuiz3() {
+    deselectAnswers3()
+    const currentQuizData3 = quizData3[currentQuiz]
+    question2.innerText = currentQuizData3.question
+    q_text.innerText = currentQuizData3.a
+    w_text.innerText = currentQuizData3.b
+    e_text.innerText = currentQuizData3.c
+    r_text.innerText = currentQuizData3.d
+ }
+ function deselectAnswers3() {
+    answerE3.forEach(answerW => answerW.checked = false)
+ }
+ function getSelected3() {
+    let answer
+    answerE3.forEach(answer3 => {
+        if(answer3.checked) {
+            answer = answer3.id
+        }
+    })
+    return answer
+ }
+ submitBtn3.addEventListener('click', () => {
+    const answer3 = getSelected3()
+    if(answer3) {
+       if(answer3 === quizData3[currentQuiz].correct) {
+           score++
+       }
+       currentQuiz++
+       if(currentQuiz < quizData3.length) {
+           loadQuiz3()
+       } else {
+           quiz3.innerHTML = `
+           <h2>You answered ${score}/${quizData3.length} questions correctly</h2>
+           <button onclick="location.reload()">Reload</button>
+           `
+       }
+    }
+ })
