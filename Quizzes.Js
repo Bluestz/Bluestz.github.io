@@ -206,7 +206,7 @@ function loadQuiz2() {
            loadQuiz2()
        } else {
            quiz2.innerHTML = `
-           <h2>You answered ${score}/${quizData2.length} questions correctly</h2>
+           <h2>The answers for each question was b, c, c, c.</h2>
            <button onclick="location.reload()">Reload</button>
            `
        }
@@ -246,7 +246,7 @@ function loadQuiz2() {
            loadQuiz3()
        } else {
            quiz3.innerHTML = `
-           <h2>You answered ${score}/${quizData3.length} questions correctly</h2>
+           <h2>The answer for each question was b, a, b, a. </h2>
            <button onclick="location.reload()">Reload</button>
            `
        }
